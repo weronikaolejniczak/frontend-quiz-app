@@ -1,6 +1,16 @@
 :root {
-  background-color: #242424;
-  color: #ffffff;
+  --bluish-light: #abc1e1;
+  --gray-light: #f4f6fa;
+  --green: #26d782;
+  --navy-dark: #313e51;
+  --navy-gray: #626c7f;
+  --navy: #3b4d66;
+  --pure-white: #ffffff;
+  --purple: #a729f5;
+  --red: #ee5454;
+
+  background-color: var(--navy-dark);
+  color: var(--pure-white);
   color-scheme: light dark;
 }
 
@@ -32,7 +42,7 @@ body {
 
 @media (prefers-color-scheme: light) {
   :root {
-    background-color: #ffffff;
-    color: #242424;
+    background-color: var(--pure-white);
+    color: var(--navy-dark);
   }
 }
