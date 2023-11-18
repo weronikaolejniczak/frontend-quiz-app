@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/weronikaolejniczak/frontend-quiz-app/compare/v1.0.0...v1.0.1) (2023-11-18)
+
+
+### Bug Fixes
+
+* vite basename ([a256770](https://github.com/weronikaolejniczak/frontend-quiz-app/commit/a25677035e210e805d65503072ad5ba06ea59a91))
+
 # 1.0.0 (2023-11-18)
 
 
