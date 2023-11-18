@@ -41,6 +41,8 @@ Users should be able to:
 
 ### Links
 
+[![Build and deploy](https://github.com/weronikaolejniczak/frontend-quiz-app/actions/workflows/build.yaml/badge.svg?branch=main)](https://github.com/weronikaolejniczak/frontend-quiz-app/actions/workflows/build.yaml)
+
 - Solution URL: [Frontend Mentor](https://your-solution-url.com)
 - Live Site URL: [Netlify](https://your-live-site-url.com)
 
