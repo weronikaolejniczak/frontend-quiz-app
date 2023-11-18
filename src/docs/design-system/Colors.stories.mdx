@@ -1,0 +1,24 @@
+import { Meta, ColorPalette, ColorItem } from '@storybook/blocks';
+
+<Meta title="Colors" />
+
+# Color palette
+
+---
+
+<ColorPalette>
+  <ColorItem title="Purple" colors={{ '--color-purple': '#A729F5' }} />
+  <ColorItem
+    title="Navy"
+    colors={{
+      '--color-navy-dark': '#313E51',
+      '--color-navy': '#3B4D66',
+      '--color-navy-gray': '#626C7F',
+    }}
+  />
+  <ColorItem title="Blue" colors={{ '--color-bluish-light': '#ABC1E1' }} />
+  <ColorItem title="Gray" colors={{ '--color-gray-light': '#F4F6FA' }} />
+  <ColorItem title="White" colors={{ '--color-pure-white': '#FFFFFF' }} />
+  <ColorItem title="Green" colors={{ '--color-green': '#26D782' }} />
+  <ColorItem title="Red" colors={{ '--color-red': '#EE5454' }} />
+</ColorPalette>
