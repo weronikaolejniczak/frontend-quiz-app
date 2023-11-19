@@ -1,0 +1,16 @@
+.button {
+  background-color: var(--color-purple);
+  border: none;
+  border-radius: var(--border-radius);
+  color: var(--color-pure-white);
+  cursor: pointer;
+  display: flex;
+  gap: 0.8rem;
+  padding: 3.2rem;
+  width: 100%;
+  transition: opacity 0.25s;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
