@@ -1,3 +1,11 @@
+# [1.3.0](https://github.com/weronikaolejniczak/frontend-quiz-app/compare/v1.2.0...v1.3.0) (2023-11-19)
+
+
+### Features
+
+* add Button component ([8879000](https://github.com/weronikaolejniczak/frontend-quiz-app/commit/88790007ff6d63508ac9864360c1b2c5346c27cd))
+* add Switch component ([48e00a8](https://github.com/weronikaolejniczak/frontend-quiz-app/commit/48e00a8c24a2f24b00e4c3fd1250705a8e24ba9e))
+
 # [1.2.0](https://github.com/weronikaolejniczak/frontend-quiz-app/compare/v1.1.0...v1.2.0) (2023-11-19)
 
 
