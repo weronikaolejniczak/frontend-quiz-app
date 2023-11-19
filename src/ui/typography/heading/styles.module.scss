@@ -1,0 +1,23 @@
+.heading {
+  line-height: 1;
+
+  &.large-size {
+    font-size: 6.4rem;
+  }
+
+  &.medium-size {
+    font-size: 3.6rem;
+  }
+
+  &.small-size {
+    font-size: 2.8rem;
+  }
+
+  &.medium-weight {
+    font-weight: var(--font-weight-medium);
+  }
+
+  &.regular-weight {
+    font-weight: var(--font-weight-regular);
+  }
+}
