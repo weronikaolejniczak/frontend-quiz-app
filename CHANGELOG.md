@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/weronikaolejniczak/frontend-quiz-app/compare/v1.0.1...v1.1.0) (2023-11-19)
+
+
+### Features
+
+* use global styles in Storybook ([f14f446](https://github.com/weronikaolejniczak/frontend-quiz-app/commit/f14f446b24bb45da605d7fee3373ce10117448ca))
+
 ## [1.0.1](https://github.com/weronikaolejniczak/frontend-quiz-app/compare/v1.0.0...v1.0.1) (2023-11-18)
 
 
