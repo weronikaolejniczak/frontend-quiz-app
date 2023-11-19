@@ -1,0 +1,23 @@
+:root {
+  --color-bluish-light: #abc1e1;
+  --color-gray-light: #f4f6fa;
+  --color-green: #26d782;
+  --color-navy-dark: #313e51;
+  --color-navy-gray: #626c7f;
+  --color-navy: #3b4d66;
+  --color-pure-white: #ffffff;
+  --color-purple: #a729f5;
+  --color-red: #ee5454;
+
+  --font-family: 'Rubik', Arial, sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-family);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}

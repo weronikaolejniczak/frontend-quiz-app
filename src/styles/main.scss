@@ -1,0 +1,35 @@
+:root {
+  background-color: var(--color-navy-dark);
+  color: var(--color-pure-white);
+  color-scheme: light dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  margin: 0;
+  min-width: 32rem;
+  min-height: 100vh;
+  font-size: 1.6rem;
+  font-weight: var(--font-weight-regular);
+  line-height: 1.5;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    background-color: var(--color-pure-white);
+    color: var(--color-navy-dark);
+  }
+}
