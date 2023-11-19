@@ -6,28 +6,29 @@ const meta: Meta<typeof Heading> = {
   title: 'Typography/Heading',
   component: Heading,
   args: {
+    as: 'span',
     children: 'Lorem ipsum dolor sit amet',
+    className: '',
     size: Heading.size.m,
     weight: Heading.weight.medium,
   },
-};
+} satisfies Meta<typeof Heading>;
 
 export default meta;
 type Story = StoryObj<typeof Heading>;
 
 export const Playground: Story = {
   argTypes: {
-    children: {
-      name: 'Content',
+    as: {
+      control: 'select',
+      options: ['h2', 'h3', 'h4', 'h5', 'p', 'span'],
     },
     size: {
       control: 'select',
-      name: 'Text size',
       options: Heading.size,
     },
     weight: {
       control: 'select',
-      name: 'Font weight',
       options: Heading.weight,
     },
   },
@@ -40,7 +41,9 @@ export const HeadingLBold: Story = {
     weight: Heading.weight.medium,
   },
   argTypes: {
+    as: { table: { disable: true } },
     children: { table: { disable: true } },
+    className: { table: { disable: true } },
     size: { table: { disable: true } },
     weight: { table: { disable: true } },
   },

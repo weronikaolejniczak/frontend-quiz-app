@@ -1,15 +1,16 @@
 import type { Preview } from '@storybook/react';
 
+import DocsPage from './docs-page.mdx';
 import '../src/styles/root.scss';
 
 const preview: Preview = {
   parameters: {
     actions: { argTypesRegex: '^on[A-Z].*' },
     controls: {
-      matchers: {
-        color: /(background|color)$/i,
-        date: /Date$/i,
-      },
+      expanded: true,
+    },
+    docs: {
+      page: DocsPage,
     },
   },
 };

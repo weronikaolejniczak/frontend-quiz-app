@@ -1,11 +1,17 @@
-type AsProp<K extends React.ElementType> = {
+import {
+  ElementType,
+  PropsWithChildren,
+  ComponentPropsWithoutRef,
+} from 'react';
+
+type AsProp<K extends ElementType> = {
   as?: K;
 };
 
-type PropsToOmit<K extends React.ElementType, P> = keyof (AsProp<K> & P);
+type PropsToOmit<K extends ElementType, P> = keyof (AsProp<K> & P);
 
-type PolymorphicComponentPropsType<
-  K extends React.ElementType,
+export type PolymorphicComponentPropsType<
+  K extends ElementType,
   Props = {}
-> = React.PropsWithChildren<Props & AsProp<K>> &
-  Omit<React.ComponentPropsWithoutRef<K>, PropsToOmit<K, Props>>;
+> = PropsWithChildren<Props & AsProp<K>> &
+  Omit<ComponentPropsWithoutRef<K>, PropsToOmit<K, Props>>;

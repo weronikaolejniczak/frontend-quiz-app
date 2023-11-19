@@ -6,28 +6,29 @@ const meta: Meta<typeof Text> = {
   title: 'Typography/Text',
   component: Text,
   args: {
+    as: 'span',
     children: 'Lorem ipsum dolor sit amet',
+    className: '',
     size: Text.size.m,
     style: Text.style.normal,
   },
-};
+} satisfies Meta<typeof Text>;
 
 export default meta;
 type Story = StoryObj<typeof Text>;
 
 export const Playground: Story = {
   argTypes: {
-    children: {
-      name: 'Content',
+    as: {
+      control: 'select',
+      options: ['h2', 'h3', 'h4', 'h5', 'p', 'span'],
     },
     size: {
       control: 'select',
-      name: 'Text size',
       options: Text.size,
     },
     style: {
       control: 'select',
-      name: 'Text style',
       options: Text.style,
     },
   },
@@ -38,7 +39,9 @@ export const Medium: Story = {
     size: Text.size.m,
   },
   argTypes: {
+    as: { table: { disable: true } },
     children: { table: { disable: true } },
+    className: { table: { disable: true } },
     size: { table: { disable: true } },
     style: { table: { disable: true } },
   },

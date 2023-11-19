@@ -1,6 +1,7 @@
 import { ElementType } from 'react';
 import { clsx } from 'clsx';
 
+import { PolymorphicComponentPropsType } from '../../../types';
 import styles from './styles.module.scss';
 
 enum TextSizes {
@@ -19,6 +20,22 @@ type PropsType = {
   style?: TextStyles;
 };
 
+/**
+ * This is a typography component that encapsulates the styling for body text, e.g. paragraph.
+ *
+ * @param as - an HTML element to use.
+ * @param className - a string for overwriting component styles.
+ * @param children - a text content to render.
+ * @param size - a font size of the text.
+ * @param style - a text style of the text.
+ *
+ * @example
+ * ```tsx
+ * <Text as="p" size={Text.size.m} style={Heading.style.normal}>
+ *  Normal paragraph
+ * </Text>
+ * ```
+ */
 export const Text = <K extends ElementType = 'span'>({
   as,
   children,
