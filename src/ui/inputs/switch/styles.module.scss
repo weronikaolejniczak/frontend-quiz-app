@@ -1,0 +1,54 @@
+.switch {
+  box-sizing: border-box;
+  display: inline-block;
+  height: 2.8rem;
+  position: relative;
+  width: 4.8rem;
+
+  &:focus-within {
+    box-shadow: 0 0 2px var(--color-navy-gray);
+    border-radius: 2rem;
+  }
+
+  input {
+    height: 0;
+    opacity: 0;
+    width: 0;
+
+    &:hover + .slider {
+      background-color: var(--color-purple);
+    }
+
+    &:checked + .slider {
+      background-color: var(--color-purple);
+
+      &::before {
+        transform: translateX(2rem);
+      }
+    }
+  }
+}
+
+.slider {
+  background-color: color-mix(in srgb, var(--color-purple) 40%, transparent);
+  border-radius: 1.4rem;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+
+  &:before {
+    background-color: var(--color-pure-white);
+    border-radius: 50%;
+    bottom: 0.4rem;
+    content: '';
+    height: 2rem;
+    left: 0.4rem;
+    position: absolute;
+    transition: 0.4s;
+    width: 2rem;
+  }
+}
